@@ -1,17 +1,17 @@
-{"questions": [{
-  "author": "Krishan Sharma",
-  "content": "How many players are in a cricket team?",
-  "datePosted": "October 28, 2016",
-  "category": "Sports"
+{ "questions": [{
+    "author": "Krishan Sharma",
+    "content": "How many players are in a cricket team?",
+    "datePosted": "October 28, 2016",
+    "category": "Sports"
 }, {
-  "author": "Vanessa Palacios Sharma",
-  "content": "How many cups are in a gallon?",
-  "datePosted": "March 28, 2015",
-  "category": "Cooking"
+    "author": "Vanessa Palacios Sharma",
+    "content": "How many cups are in a gallon?",
+    "datePosted": "March 28, 2015",
+    "category": "Cooking"
 }, {
-  "author": "Nivedita Kapoor",
-  "content": "Where can I buy Indian groceries in Portland?",
-  "datePosted": "October 13, 2016",
-  "category": "Miscellaneous"
+    "author": "Nivedita Kapoor",
+    "content": "Where can I buy Indian groceries in Portland?",
+    "datePosted": "October 13, 2016",
+    "category": "Miscellaneous"
   }]
 }
