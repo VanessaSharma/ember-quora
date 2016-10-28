@@ -13,5 +13,15 @@
     "content": "Where can I buy Indian groceries in Portland?",
     "datePosted": "October 13, 2016",
     "category": "Miscellaneous"
-  }]
+  }],
+  "answers": [{
+    "responder": "James Ham",
+    "reply": "There are eleven players in a cricket team."
+  }, {
+    "responder": "Katie Smith",
+    "reply": "A gallon has a total of 16 cups."
+  }, {
+    "responder": "Laskhmi Pidaparthi",
+    "reply": "You can find Indian groceries in Beaverton or Hillsboro."
+    }]
 }

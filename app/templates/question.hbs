@@ -7,10 +7,10 @@
          <p>Posted on: {{model.datePosted}}</p>
          <p>{{model.category}}</p>
 
-         {{question-detail question=model destroyQuestion="destroyQuestion"}}
+         {{update-question question=model update="update"}}
 
-         <button {{action 'delete' post}}>Delete</button>
-         {{update-post post=model update="update"}}
+         <button {{action 'delete' question}}>Delete</button>
+          {{question-detail question=model destroyQuestion="destroyQuestion"}}
        </div>
     </div>
   </div>
