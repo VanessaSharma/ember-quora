@@ -2,5 +2,11 @@
 
 <h3>The best answer to any question</h3>
 
+<ul>
+  {{#each model as |question|}}
+     <li>{{questions.author}} asked: {{questions.content}} on {{questions.datePosted}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About Quora{{/link-to}}
 {{#link-to 'contact'}}Contact Quora{{/link-to}}
