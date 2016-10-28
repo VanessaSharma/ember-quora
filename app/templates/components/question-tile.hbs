@@ -1,5 +1,5 @@
 <li>
   {{question.author}} asked: {{question.content}} on {{question.datePosted}}
 </li>
-
-<button {{action 'delete' rental}}>Delete Rental</button>
+{{update-question question=question update="update"}}
+<button {{action 'delete' question}}>Delete</button>

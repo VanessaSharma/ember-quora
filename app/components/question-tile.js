@@ -2,9 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    delete(rental) {
-      if (confirm('Are you sure you want to delete this rental?')) {
-        this.sendAction('destroyRental', rental);
+    update(question, params) {
+      this.sendAction('update', question, params);
+    },
+    delete(question) {
+      if (confirm('Bye bye question? 😭👋')) {
+        this.sendAction('destroyQuestion', question);
       }
     }
   }
