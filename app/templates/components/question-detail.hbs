@@ -4,12 +4,14 @@
       <div class="well">
           <h2> Answers </h2>
           <ul>
-            <button {{action 'delete' question}}>Delete</button>
             {{#each question.answers as |answer|}}
               {{answer-tile answer=answer destroyAnswer="destroyAnswer" update="update"}}
+              <!-- <button {{action 'delete' answer}}>Delete</button> -->
             {{/each}}
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+<button {{action 'delete' question}}>Delete Question</button>

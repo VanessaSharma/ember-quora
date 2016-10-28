@@ -8,10 +8,10 @@
          <p>Category: {{model.category}}</p>
 
          {{update-question question=model update="update"}}
-         <!-- <button {{action 'delete' question}}>Delete</button> -->
         {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
         {{new-answer saveAnswer="saveAnswer" question=model}}
+         <!-- <button {{action 'delete' question}}>Delete</button> -->
        </div>
     </div>
   </div>
