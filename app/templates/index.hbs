@@ -1,9 +1,11 @@
 <h1>Welcome to Quora!</h1>
 
-<h3>The best answer to any question</h3>
+<p>The best answer to any question</p>
+
+<h2>Questions</h2>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
@@ -14,9 +16,11 @@
 
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer.responder}} - {{answer.reply}}</li>
+    <li>{{answer.responder}} answered: {{answer.reply}}</li>
   {{/each}}
 </ul>
+
+{{new-answer saveAnswer="saveAnswer"}}
 
 <hr>
 
