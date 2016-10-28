@@ -6,6 +6,9 @@ export default Ember.Component.extend({
       if (confirm('Bye bye question?😭👋')) {
         this.sendAction('destroyQuestion', question);
       }
-    }
-  }
+   },
+   destroyAnswer(answer) {
+     this.sendAction('destroyAnswer', answer);
+   }
+ }
 });

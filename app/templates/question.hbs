@@ -6,12 +6,9 @@
          <h3>{{model.content}}</h3>
          <p>Posted on: {{model.datePosted}}</p>
          <p>Category: {{model.category}}</p>
-
          {{update-question question=model update="update"}}
-        {{question-detail question=model destroyQuestion="destroyQuestion"}}
-
-        {{new-answer saveAnswer="saveAnswer" question=model}}
-         <!-- <button {{action 'delete' question}}>Delete</button> -->
+         {{new-answer saveAnswer="saveAnswer" question=model}}
+         {{question-detail question=model destroyQuestion="destroyQuestion"}}
        </div>
     </div>
   </div>
