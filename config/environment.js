@@ -16,7 +16,7 @@ module.exports = function(environment) {
         Date: false
       }
     },
-  firebase = {
+  firebase: {
     apiKey: "AIzaSyB0Ex1vbay_BmYwE8Qu_5yw5lQqUdiMy6Q",
     authDomain: "quora-app-81164.firebaseapp.com",
     databaseURL: "https://quora-app-81164.firebaseio.com",

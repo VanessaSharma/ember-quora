@@ -4,9 +4,10 @@
 
 <ul>
   {{#each model as |question|}}
-     <li>{{questions.author}} asked: {{questions.content}} on {{questions.datePosted}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
+
 
 {{#link-to 'about'}}About Quora{{/link-to}}
 {{#link-to 'contact'}}Contact Quora{{/link-to}}
