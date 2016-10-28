@@ -1,0 +1,129 @@
+body {
+  background-image: url("https://galleryofgod.files.wordpress.com/2014/03/wpid-hd-wallpapers-cute-ganesha-jpg.jpeg");
+  background-size: 1200px 900px;
+  text-align: center;
+  align-items: center;
+  background-position:  top;
+  position:  relative;
+  background-repeat: no-repeat;
+}
+p{
+  font-size: 170%;
+}
+
+ul {
+  font-size: 150%;
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+img{
+  width: auto;
+  max-width: 70%;
+  height: auto;
+  max-height: 50%;
+  border: solid;
+  border-color: #182d4f;
+  border-radius: 10px;
+}
+
+#postBody {
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+  font-size: 43px;
+  color: #695BB8;
+  text-decoration: underline;
+  text-align: center;
+  font-family: font-family: 'Quicksand', sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+}
+
+h7 {
+  font-size: 80px;
+  color: #695BB8;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h8 {
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: 'Dosis', sans-serif;
+}
+
+h6 {
+  font-size: 20px;
+  color: #695BB8;
+  text-shadow: 2px 2px black;
+}
+
+.well {
+    border-radius: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+button {
+  width: 90px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: #182d4f;
+  color: lightgrey;
+}
+
+.navButtons a {
+  width: 90px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: #182d4f;
+  color: lightgrey !important;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+a {
+  color: #182d4f;
+}
+
+
+#delButton, #newButton {
+  width: 90px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: #182d4f;
+  color: lightgrey;
+  display: inline;
+}
+
+#comments{
+  background-image: url("http://www.hdwallpapery.com/static/images/black-background-ppt-backgrounds-powerpoint_8WuVMv9.jpg");
+}
+
+#commentWell {
+  background-color: #3e55b2;
+  border-width: medium;
+}
