@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+       <div class= "well" id="postBody">
+         <h1>{{model.author}}</h1>
+         <h3>{{model.content}}</h3>
+         <p>Posted on: {{model.datePosted}}</p>
+         <p>{{model.category}}</p>
+
+         {{question-detail question=model destroyQuestion="destroyQuestion"}}
+
+         <button {{action 'delete' post}}>Delete</button>
+         {{update-post post=model update="update"}}
+       </div>
+    </div>
+  </div>
+</div>

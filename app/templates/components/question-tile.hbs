@@ -1,5 +1,3 @@
 <li>
-  {{question.author}} asked: {{question.content}} on {{question.datePosted}}
+  {{#link-to 'question' question.id}}{{question.author}} asked: {{question.content}} on {{question.datePosted}} {{/link-to}}
 </li>
-{{update-question question=question update="update"}}
-<button {{action 'delete' question}}>Delete</button>
