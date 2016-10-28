@@ -6,6 +6,7 @@
           <ul>
             {{#each question.answers as |answer|}}
               {{answer-tile answer=answer destroyAnswer="destroyAnswer" update="update"}}
+            {{/each}}
           </ul>
         </div>
       </div>
