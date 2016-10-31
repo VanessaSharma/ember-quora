@@ -83,8 +83,8 @@ h6 {
 }
 
 button {
-  width: 90px;
-  height: 35px;
+  width: 100px;
+  height: 45px;
   margin-top: 10px;
   border-radius: 7px;
   background-color: #182d4f;
@@ -117,10 +117,6 @@ a {
   background-color: #182d4f;
   color: lightgrey;
   display: inline;
-}
-
-#comments{
-  background-image: url("http://www.hdwallpapery.com/static/images/black-background-ppt-backgrounds-powerpoint_8WuVMv9.jpg");
 }
 
 #commentWell {
