@@ -32,28 +32,9 @@ export default Ember.Route.extend({
        });
        this.transitionTo('question', question);
      },
-     destroyAnswer(answer, question) {
+     destroyAnswer(answer) {
        answer.destroyRecord();
-       this.transitionTo('question', question);
+       this.transitionTo('question');
      }
    }
  });
-
-
-
-      // },
-  //   destroyQuestion(question) {
-  //     question.destroyRecord();
-  //     this.transitionTo('index');
-  //   },
-  //   saveAnswer(params) {
-  //    var newAnswer = this.store.createRecord('answer', params);
-  //    var question = params.question;
-  //    question.get('answers').addObject(newAnswer);
-  //    newAnswer.save().then(function() {
-  //      return question.save();
-  //    });
-  //    this.transitionTo('question', question);
-  //   }
-  //  }
-  // });
