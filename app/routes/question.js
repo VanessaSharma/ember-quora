@@ -32,9 +32,9 @@ export default Ember.Route.extend({
        });
        this.transitionTo('question', question);
      },
-     destroyAnswer(answer) {
+     destroyAnswer(answer, question) {
        answer.destroyRecord();
-       this.transitionTo('index');
+       this.transitionTo('question', question);
      }
    }
  });
