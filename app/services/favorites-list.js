@@ -14,8 +14,5 @@ export default Ember.Service.extend({
   },
   empty() {
     this.get('questions').setObjects([]);
-  },
-  listCount: Ember.computed('questions.[]', function() {
-    return this.get('questions.length');
-  })
+  }
 });

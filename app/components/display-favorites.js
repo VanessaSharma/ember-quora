@@ -9,12 +9,5 @@ export default Ember.Component.extend({
     emptyList() {
       this.get('favoritesList').empty();
     }
-  },
-  total: Ember.computed('favoritesList.questions.[]', function() {
-    var listTotal = 0;
-    listTotal += this.get('favoritesList.questions.length');
-    if(listTotal === 0) {
-      return Ember.String.htmlSafe("<hr><button>Add Favorites</button>");
     }
-  })
 });
