@@ -1,5 +1,8 @@
-<li>
-  <h3>{{heading}}</h3>
-</li>
-
-<button id="delButton" {{action 'delete' answer}}>Delete Answer</button>
+ <li>
+    <h3>{{heading}}</h3>
+   </li>
+<button id="delButton" {{action 'delete' answer}}>Delete</button>
+ {{update-answer updateAnswer="updateAnswer" answer=answer}}
+ <button {{action 'upVote' answer}}>😀{{answer.upVotes}}</button>
+ <button {{action 'downVote' answer}}>😒 {{answer.downVotes}}</button>
+  <hr>

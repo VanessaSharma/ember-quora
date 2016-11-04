@@ -35,6 +35,22 @@ export default Ember.Route.extend({
      destroyAnswer(answer) {
        answer.destroyRecord();
        this.transitionTo('question');
-     }
-   }
- });
+     },
+    updateAnswer(answer, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !== undefined) {
+          answer.set(key, params[key]);
+        }
+      });
+      answer.save();
+    },
+    upVote(answer) {
+      answer.incrementProperty('upVotes');
+      answer.save();
+    },
+    downVote(answer) {
+      answer.incrementProperty('downVotes');
+      answer.save();
+    }
+  }
+});

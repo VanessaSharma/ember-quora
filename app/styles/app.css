@@ -83,21 +83,37 @@ h6 {
 }
 
 button {
-  width: 100px;
-  height: 45px;
+  width: 120px;
+  height: 40px;
   margin-top: 10px;
   border-radius: 7px;
-  background-color: #182d4f;
-  color: lightgrey;
+  background-color: #FF4D5E;
+  font-weight: bold;
+  color: black;
 }
+.answers {
+  width: auto;
+  height: auto;
+}
+
+/*.answersBlock {
+  border-width: thin;
+  font-size: 100%;
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+  position: static;
+  text-align: center;
+
+}*/
 
 .navButtons a {
   width: 90px;
   height: 35px;
   margin-top: 10px;
   border-radius: 7px;
-  background-color: #182d4f;
-  color: lightgrey !important;
+  background-color: #FF4D5E;
+  color: black !important;
 }
 
 a:hover{
@@ -114,8 +130,8 @@ a {
   height: 50px;
   margin-top: 10px;
   border-radius: 7px;
-  background-color: #182d4f;
-  color: lightgrey;
+  background-color: #FF4D5E;
+  color: black;
   display: inline;
 }
 

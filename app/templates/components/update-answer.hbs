@@ -1,0 +1,10 @@
+{{#if updateAnswerForm}}
+<h4>Edit Your Answer</h4>
+<div class="form">
+  {{input class="form-control"  id="responder" value=answer.responder}}
+  {{textarea class="form-control"  id="reply" value=answer.reply}}
+  <button class="answers" {{action 'updateAnswer' answer}}>Save Edit</button>
+</div>
+{{else}}
+<button class="answers" {{action 'updateAnswerForm'}}>Edit Answer</button>
+{{/if}}

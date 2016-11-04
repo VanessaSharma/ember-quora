@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-xs-12">
        <div class= "well" id="postBody">
-         <h1>{{model.author}}</h1>
-         <h3>{{model.content}}</h3>
+         <h1>{{model.content}}</h1>
+         <h3>Asked by: {{model.author}}</h3>
          <p>Posted on: {{model.datePosted}}</p>
          <p>Category: {{model.category}}</p>
-         {{update-question question=model update="update"}}
-         {{new-answer saveAnswer="saveAnswer" question=model}}
+         {{update-question question=model update="update" updateAnswer="updateAnswer"}}
+         {{new-answer saveAnswer="saveAnswer" question=model upVote="upVote" downVote="downVote"}}
          {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
        </div>
     </div>
