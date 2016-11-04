@@ -6,13 +6,14 @@
 
 <ul>
   {{#each model.questions as |question|}}
-  {{question-tile question=question}} {{question-popularity question}}
+  {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question saveQuestion2="saveQuestion3"}}
 
 <hr>
+{{display-favorites}}
 
 {{#link-to 'about'}}About Quora{{/link-to}}
 <br>

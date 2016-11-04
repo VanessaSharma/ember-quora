@@ -1,3 +1,5 @@
 <li>
   {{#link-to 'question' question.id}}{{question.author}} asked: {{question.content}} {{/link-to}}
+  {{question-popularity question}}
+<li><small>Number of answers:{{numberOfAnswers}}</small></li>
 </li>

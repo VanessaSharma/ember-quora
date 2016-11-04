@@ -1,14 +1,14 @@
 import Ember from 'ember';
 
-export function questionPopularity(params) {
+export function listPopularity(params) {
   var question = params[0];
   var popularity;
   if(question.get('answers').get('length') >=3) {
-    popularity = Ember.String.htmlSafe('<span class="glyphicon glyphicon-heart"></span>  Popular ');
+    popularity = Ember.String.htmlSafe('<span class="glyphicon glyphicon-heart"></span>  popular ');
   }else {
-    popularity = Ember.String.htmlSafe('<span class="glyphicon glyphicon-pencil"></span>  Needs answer! ');
+    popularity = Ember.String.htmlSafe('<span class="glyphicon glyphicon-pencil"></span>  need answer ');
   }
   return popularity;
 }
 
-export default Ember.Helper.helper(questionPopularity);
+export default Ember.Helper.helper(listPopularity);

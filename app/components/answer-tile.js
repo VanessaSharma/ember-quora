@@ -6,19 +6,13 @@ export default Ember.Component.extend({
   }),
 
   actions: {
-    delete(answer) {
+    deleteAnswer(answer) {
       if (confirm('Not confident about your answer?😰')) {
-        this.sendAction('destroyAnswer', answer);
+        this.sendAction('deleteAnswer', answer);
      }
     },
    updateAnswer(answer, params) {
     this.sendAction('updateAnswer', answer, params);
-  },
-      upVote(answer) {
-        this.sendAction('upVote', answer);
-      },
-      downVote(answer) {
-        this.sendAction('downVote', answer);
-      }
-  },
+  }
+  }
 });

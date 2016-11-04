@@ -32,7 +32,7 @@ export default Ember.Route.extend({
        });
        this.transitionTo('question', question);
      },
-     destroyAnswer(answer) {
+     deleteAnswer(answer) {
        answer.destroyRecord();
        this.transitionTo('question');
      },
@@ -42,14 +42,6 @@ export default Ember.Route.extend({
           answer.set(key, params[key]);
         }
       });
-      answer.save();
-    },
-    upVote(answer) {
-      answer.incrementProperty('upVotes');
-      answer.save();
-    },
-    downVote(answer) {
-      answer.incrementProperty('downVotes');
       answer.save();
     }
   }

@@ -6,9 +6,9 @@
           <ul>
             {{#each question.answers as |answer|}}
               {{answer-tile answer=answer destroyAnswer="destroyAnswer" update="update"}}
+              <button {{action 'addToFavorites' question}}>Add to Favorites</button>
             {{/each}}
           </ul>
-          <!-- <button id="delButton" {{action 'delete' answer}}>Delete Answer</button> -->
         </div>
       </div>
     </div>

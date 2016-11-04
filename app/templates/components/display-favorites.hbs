@@ -1,0 +1,7 @@
+{{#each favoritesList.questions as |question|}}
+   <h4>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h4>
+   <button {{action "removeFromFavorites" question}}> Remove Favorites</button>
+{{/each}}
+
+<button {{action 'emptyList' questions}}>Empty List</button>
+{{#link-to 'index'}}{{total}}{{/link-to}}

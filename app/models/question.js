@@ -5,5 +5,11 @@ export default DS.Model.extend({
   content: DS.attr(),
   datePosted: DS.attr(),
   category: DS.attr(),
-  answers: DS.hasMany('answer', { async: true })
-});
+  answers: DS.hasMany('answer', { async: true }),
+
+
+  favoritesList: Ember.inject.service(),
+  inFavorites: Ember.computed('favoritesList.questions.[]', function() {
+      return this.get('favoritesList').includes(this);
+    })
+  });
