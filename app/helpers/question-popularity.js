@@ -6,7 +6,7 @@ export function listPopularity(params) {
   if(question.get('answers').get('length') >=3) {
     popularity = Ember.String.htmlSafe('<span class="glyphicon glyphicon-heart"></span>  popular ');
   }else {
-    popularity = Ember.String.htmlSafe('<span class="glyphicon glyphicon-pencil"></span>  need answer ');
+    popularity = Ember.String.htmlSafe('<span class="glyphicon glyphicon-pencil"></span>  Needs answer ');
   }
   return popularity;
 }
