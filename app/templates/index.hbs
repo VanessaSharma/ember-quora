@@ -1,14 +1,21 @@
-<h7>Welcome to Quora!</h7>
+<div class="jumbotron">
+</div>
 
-<p>The best answer to any question</p>
+<div class="container">
+<h3>The best answer to any question</h3>
+</div>
+<!-- <p>The best answer to any question</p> -->
 
 <h2>Questions</h2>
 
-<ul>
-  {{#each model.questions as |question|}}
-  {{question-tile question=question}}
-  {{/each}}
-</ul>
+<div class="container">
+  <ul>
+    {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+    {{/each}}
+  </ul>
+
+</div>
 
 {{new-question saveQuestion2="saveQuestion3"}}
 
